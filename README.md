@@ -112,12 +112,28 @@ streamlit run app.py
 
 ---
 
-## 👩‍💻 Built By
+## 👩‍💻 About
 
-**Swarleen Bhamra** — Data Analyst · Power BI · AI Analytics · Toronto, ON
+**Swarleen Bhamra** — Business Analyst & Data Analyst based in Toronto, ON.
 
-[🌐 swarleen.com](https://www.swarleen.com) · [💼 LinkedIn](https://www.linkedin.com/in/swarleenbhamra/) · [📂 GitHub](https://github.com/Swarleen)
+I build data solutions that sit at the intersection of analytics, AI, and business intelligence — from Power BI dashboards and audit analytics tools to AI-powered applications that make data accessible to everyone.
+
+<div align="center">
+
+| | |
+|---|---|
+| 🌐 Portfolio | [swarleen.com](https://www.swarleen.com) |
+| 💼 LinkedIn | [linkedin.com/in/swarleenbhamra](https://www.linkedin.com/in/swarleenbhamra/) |
+| 📊 Power BI Dashboards | [github.com/Swarleen/PowerBI-Portfolio](https://github.com/Swarleen/PowerBI-Portfolio) |
+| 🐙 GitHub | [github.com/Swarleen](https://github.com/Swarleen) |
+
+</div>
+
+> 💼 Open to Data Analyst, Business Technology Analyst, Business Sstems Analyst, and Technology Analytics roles in Toronto.
+> If this project resonates with what your team is building — let's connect.
 
 ---
 
-*Built as part of the AI-powered analytics portfolio — showcasing the intersection of audit domain knowledge, data engineering, and LLM application development.*
+<div align="center">
+<sub>Dataset is fictional and created for portfolio demonstration purposes only.</sub>
+</div>
