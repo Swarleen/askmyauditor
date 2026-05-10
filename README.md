@@ -9,6 +9,25 @@
 
 ---
 
+## 🚀 Try the App
+
+<div align="center">
+
+### 👇 Click the link below to open the live app
+
+<a href="https://swarleen.github.io/askmyauditor/" target="_blank">
+</a>
+
+**[https://swarleen.github.io/askmyauditor/](https://swarleen.github.io/askmyauditor/)**
+
+> 💡 Right-click → Open in new tab to keep this page open
+
+
+[![Watch the demo](Askmyauditor.png)](https://swarleen.github.io/askmyauditor/)
+
+</div>
+
+
 ## 💡 What It Does
 
 **Ask the Auditor** bridges the gap between audit data and audit insight. Instead of navigating dashboards manually, auditors and analysts can ask questions in plain English:
