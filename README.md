@@ -82,26 +82,6 @@ Built on **Claude** (Anthropic) with a structured system prompt that:
 
 ---
 
-## 🚀 How to Run Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/Swarleen/ask-the-auditor
-cd ask-the-auditor
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Add your Anthropic API key
-mkdir .streamlit
-echo 'ANTHROPIC_API_KEY = "your-key-here"' > .streamlit/secrets.toml
-
-# Run
-streamlit run app.py
-```
-
----
-
 ## 🔗 Related Projects
 
 | Project | Description | Live |
