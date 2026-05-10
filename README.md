@@ -1,2 +1,123 @@
-# AskTheAuditor
-An AI agent that takes a natural language question about audit and returns:  A plain English answer and a dynamically generated chart
+# 🔍 Ask the Auditor — AI Audit Analytics Agent
+
+[![Streamlit App](https://img.shields.io/badge/▶%20Live%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://ask-the-auditor.streamlit.app/)
+[![Power BI](https://img.shields.io/badge/Power%20BI%20Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiMjQ1NDA3M2EtMTBjOC00YWJkLWIzZjktZGMzZjRhYjdjNWQzIiwidCI6IjMyMWIxNDA4LTIxZjAtNDE0My1hMzkwLTNiNjIwMmU2NWUxZiJ9)
+[![Portfolio](https://img.shields.io/badge/🌐%20swarleen.com-1B3A6B?style=for-the-badge)](https://www.swarleen.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swarleenbhamra/)
+
+> An AI-powered conversational analytics agent built on a real IT Audit Universe dataset. Ask any question in plain English — get data-driven findings, dynamic charts, and audit recommendations instantly.
+
+---
+
+## 💡 What It Does
+
+**Ask the Auditor** bridges the gap between audit data and audit insight. Instead of navigating dashboards manually, auditors and analysts can ask questions in plain English:
+
+- *"Which domains have the most overdue entities?"*
+- *"Show me all Critical entities with weak controls"*
+- *"Which management responses are overdue or not started?"*
+- *"What entities haven't been audited in over 3 years?"*
+
+The AI agent returns:
+- ✅ A plain English analytical answer with specific data citations
+- 📊 A dynamically generated chart (bar, horizontal bar, pie)
+- 📋 The underlying data table
+- 🎯 A key finding — the single most important takeaway
+- ⚡ An actionable audit recommendation
+
+---
+
+## 🧠 The AI Layer
+
+Built on **Claude** (Anthropic) with a structured system prompt that:
+- Injects the full 44-entity audit universe dataset as context
+- Enforces JSON-structured responses for consistent rendering
+- Constrains the model to only cite data that exists in the dataset
+- Generates chart specifications that the Plotly layer renders dynamically
+- Returns audit-domain language — inherent risk, residual risk, control effectiveness, audit priority
+
+**Prompt engineering approach:**
+- Schema injection — full column definitions + data types in the system prompt
+- Structured output enforcement — JSON schema with required keys
+- Domain grounding — model instructed to respond as a senior technology auditor
+- Safety constraints — model cannot fabricate data, only analyse what exists
+
+---
+
+## 📊 The Dataset
+
+**IT Audit Universe** — 44 auditable entities across 5 technology domains:
+
+| Domain | Entities |
+|---|---|
+| Cybersecurity | 10 |
+| Cloud & Infrastructure | 9 |
+| Data Governance | 8 |
+| IT Governance | 9 |
+| Compliance & Regulatory | 8 |
+
+**13 dimensions per entity:**
+`Audit_Entity` · `Domain` · `Inherent_Risk_Score` · `Control_Effectiveness` · `Last_Audit_Date` · `Months_Since_Last_Audit` · `Residual_Risk_Score` · `Audit_Priority` · `Recommended_Audit_Cycle` · `Regulatory_Relevance` · `Open_Issues` · `Management_Response_Status` · `Overdue_Flag`
+
+**Key metrics:**
+- 🔴 Critical priority entities: 15
+- ⏰ Overdue entities: 29
+- 📋 Total open issues: 150+
+- ⚠️ Weak/Not Tested controls: 18
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| AI / LLM | Claude (Anthropic API) |
+| Web framework | Streamlit |
+| Data processing | Pandas |
+| Visualisation | Plotly Express |
+| Data source | Excel → Pandas DataFrame |
+| Visual analytics | Power BI (embedded iframe) |
+| Deployment | Streamlit Cloud |
+| Version control | GitHub |
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/Swarleen/ask-the-auditor
+cd ask-the-auditor
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Add your Anthropic API key
+mkdir .streamlit
+echo 'ANTHROPIC_API_KEY = "your-key-here"' > .streamlit/secrets.toml
+
+# Run
+streamlit run app.py
+```
+
+---
+
+## 🔗 Related Projects
+
+| Project | Description | Live |
+|---|---|---|
+| **IT Audit Universe Dashboard** | Power BI dashboard — risk scoring, coverage gap, domain heatmap | [Open Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjQ1NDA3M2EtMTBjOC00YWJkLWIzZjktZGMzZjRhYjdjNWQzIiwidCI6IjMyMWIxNDA4LTIxZjAtNDE0My1hMzkwLTNiNjIwMmU2NWUxZiJ9) |
+| **AskMyData** | NL-to-SQL AI app on cybersecurity incident data | [cyberquery-ai.streamlit.app](https://cyberquery-ai.streamlit.app) |
+| **Cybersecurity Incident Tracker** | Power BI — 200 incidents, SLA, financial impact | [Open Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDgyNTA5NmYtOGU3OC00ZTMzLTk2ZGItNDVkYTBhNGFlYTk1IiwidCI6IjMyMWIxNDA4LTIxZjAtNDE0My1hMzkwLTNiNjIwMmU2NWUxZiJ9) |
+
+---
+
+## 👩‍💻 Built By
+
+**Swarleen Bhamra** — Data Analyst · Power BI · AI Analytics · Toronto, ON
+
+[🌐 swarleen.com](https://www.swarleen.com) · [💼 LinkedIn](https://www.linkedin.com/in/swarleenbhamra/) · [📂 GitHub](https://github.com/Swarleen)
+
+---
+
+*Built as part of the AI-powered analytics portfolio — showcasing the intersection of audit domain knowledge, data engineering, and LLM application development.*
