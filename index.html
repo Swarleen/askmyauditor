@@ -885,7 +885,7 @@ html.dark .theme-toggle:hover { background: rgba(255,255,255,0.06); color: #E8ED
         <div class="msg-ai">
           <div class="ai-avatar"><span class="material-symbols-outlined">psychology</span></div>
           <div class="bubble">
-            <div class="ai-label">AskMyAuditor <span class="ref">44-DS</span></div>
+            <div class="ai-label">AskMyAuditor <span class="ref">Agent</span></div>
             <p>Hello! I'm AskMyAuditor — an AI analytics agent built on the IT Audit Universe dataset. I can answer any question about <strong>44 auditable entities across 5 technology domains</strong> in plain English.</p>
             <p>Ask me about risk priorities, overdue coverage, control gaps, open issues, or management response status. Click a suggestion above or type your own question below.</p>
           </div>
@@ -1478,7 +1478,7 @@ function clearChat() {
   document.getElementById('chatArea').innerHTML = `
     <div class="msg-ai">
       <div class="ai-avatar"><span class="material-symbols-outlined">psychology</span></div>
-      <div class="bubble"><div class="ai-label">AskMyAuditor <span class="ref">44-DS</span></div>
+      <div class="bubble"><div class="ai-label">AskMyAuditor <span class="ref">Agent</span></div>
         <p>Chat cleared. Ask me anything about the <strong>44 auditable entities</strong> in the IT Audit Universe.</p>
       </div>
     </div>`;
@@ -1507,7 +1507,7 @@ async function sendMessage() {
   thinkDiv.innerHTML = `
     <div class="ai-avatar"><span class="material-symbols-outlined">psychology</span></div>
     <div class="bubble">
-      <div class="ai-label">AskMyAuditor <span class="ref">44-DS</span></div>
+      <div class="ai-label">AskMyAuditor <span class="ref">Agent</span></div>
       <div style="display:flex;align-items:center;gap:8px;color:var(--text-dim);font-size:13px;font-style:italic;">
         <div style="display:flex;gap:4px;">
           <div style="width:7px;height:7px;background:var(--accent);border-radius:50%;animation:bounce 1.2s infinite 0s;"></div>
@@ -1537,7 +1537,7 @@ async function sendMessage() {
     aiDiv.innerHTML = `
       <div class="ai-avatar"><span class="material-symbols-outlined">psychology</span></div>
       <div class="bubble" style="max-width:94%;">
-        <div class="ai-label">AskMyAuditor <span class="ref">44-DS</span></div>
+        <div class="ai-label">AskMyAuditor <span class="ref">Agent</span></div>
         <p style="font-size:14px;line-height:1.75;color:var(--text-primary);margin-bottom:10px;">${r.answer||''}</p>
         ${r.chart_type && r.chart_type!=='none' ? `<div id="${chartId}" style="width:100%;margin:10px 0;border-radius:8px;overflow:hidden;border:1px solid var(--border);"></div>` : ''}
         ${r.data_table?.length ? `<div style="margin:10px 0;"><div style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);margin-bottom:6px;">📄 Data</div><div id="${tableId}" style="overflow-x:auto;border-radius:8px;border:1px solid var(--border);"></div></div>` : ''}
