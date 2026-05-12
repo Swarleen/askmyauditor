@@ -1,6 +1,5 @@
 # 🔍 Ask the Auditor — AI Audit Analytics Agent
 
-[![Streamlit App](https://img.shields.io/badge/▶%20Live%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://ask-the-auditor.streamlit.app/)
 [![Power BI](https://img.shields.io/badge/Power%20BI%20Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiMjQ1NDA3M2EtMTBjOC00YWJkLWIzZjktZGMzZjRhYjdjNWQzIiwidCI6IjMyMWIxNDA4LTIxZjAtNDE0My1hMzkwLTNiNjIwMmU2NWUxZiJ9)
 [![Portfolio](https://img.shields.io/badge/🌐%20swarleen.com-1B3A6B?style=for-the-badge)](https://www.swarleen.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swarleenbhamra/)
